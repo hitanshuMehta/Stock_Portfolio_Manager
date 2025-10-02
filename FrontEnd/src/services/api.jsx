@@ -115,7 +115,7 @@ export const authService = {
       newPassword
     });
     return response.data;
-  }
+  } 
 };
 
 // Portfolio services
