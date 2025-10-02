@@ -90,7 +90,7 @@ const StockForm = ({ stock, onSubmit, onCancel }) => {
       setSearching(true);
       try {
        const response = await fetch(
-          `${API_URL}/companies/search?q=${encodeURIComponent(searchQuery)}`
+          `${VITE_API_URL}/companies/search?q=${encodeURIComponent(searchQuery)}`
         );
         if (response.ok) {
           const data = await response.json();
