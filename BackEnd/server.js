@@ -657,8 +657,8 @@ app.use(
   })
 );
 
-// Handle preflight requests for all routes
-app.options("*", cors());
+// Preflight requests are already handled by the cors() middleware above
+// No need for explicit app.options("*") with newer Express versions
 
 // Security headers
 app.use((req, res, next) => {
